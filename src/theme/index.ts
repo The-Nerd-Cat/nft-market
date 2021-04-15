@@ -95,20 +95,24 @@ export default {
     primary: {
       ...defaultButton,
       fontWeight: 'bold',
-      minWidth: 'button',
-      bg: 'primary',
+      minWidth: 'fit-content',
+      bg: '#3a4aad',
       color: 'white',
       textAlign: 'center',
       display: 'flex',
       width: '100%',
       alignItems: 'center',
+      borderRadius: "9999px",
       justifyContent: 'center',
     },
 
     secondary: {
       cursor: 'pointer',
       variant: 'buttons.primary',
-      bg: 'secondary',
+      color: 'secondary',
+      bg: 'white',
+      border: '2px solid',
+      borderColor: 'secondary',
       fontWeight: 'body',
     },
     tertiary: {
@@ -177,7 +181,7 @@ export default {
       lineHeight: 2,
       fontSize: 2,
       letterSpacing: 0.44,
-      color: 'white',
+      color: 'black',
     },
     h1: {
       fontFamily: 'heading',
@@ -221,6 +225,7 @@ export default {
     },
     a: {
       color: 'primary',
+      textDecoration: 'none',
       '&:hover': {
         color: 'inherit',
       },

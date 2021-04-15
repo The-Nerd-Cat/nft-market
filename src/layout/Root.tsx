@@ -14,8 +14,8 @@ function getLibrary(provider: any): Web3Provider {
 const Root = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Header />
       <Web3ReactProvider getLibrary={getLibrary}>
+      <Header />
         <Connect>
           <Switch>
             <PrivateRoute path="/profile" component={Profile} />
