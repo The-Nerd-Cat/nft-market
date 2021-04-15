@@ -18,9 +18,9 @@ const defaultButton = {
 } as SxProp
 
 export const Palette = {
-  text: '#FFF',
+  text: '#333',
   white: '#fff',
-  background: '#333',
+  background: '#FFF',
   primary: '#111',
   secondary: '#333',
   gray: '#F7F9FA',
@@ -102,7 +102,7 @@ export default {
       display: 'flex',
       width: '100%',
       alignItems: 'center',
-      borderRadius: "9999px",
+      borderRadius: '9999px',
       justifyContent: 'center',
     },
 

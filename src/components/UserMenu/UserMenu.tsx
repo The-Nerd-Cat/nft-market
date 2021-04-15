@@ -21,10 +21,10 @@ const UserMenu = () => {
       {isAuthenticated && user && (
         <>
           <Box>
-            <Heading sx={{ p: 0, color: 'white' }} as="h4">
+            <Heading sx={{ p: 0, color: 'primary' }} as="h4">
               {toShort(user.address)}
             </Heading>
-            <Heading sx={{ p: 0, mt: 1, textAlign: 'right', color: 'white' }} as="h5">
+            <Heading sx={{ p: 0, mt: 1, textAlign: 'right', color: 'primary' }} as="h5">
               {EtherSymbol}
               {user.balance}
             </Heading>

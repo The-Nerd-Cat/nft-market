@@ -85,10 +85,10 @@ const Profile = () => {
     <Box>
       <Heading as="h1">My Profile</Heading>
       <Grid columns="1fr 1fr" sx={{ gap: '0 20px' }}>
-        <Heading as="h4" sx={{ color: 'green' }}>
+        <Heading as="h4" sx={{ color: 'blue' }}>
           Address
         </Heading>
-        <Heading as="h4" sx={{ color: 'green' }}>
+        <Heading as="h4" sx={{ color: 'blue' }}>
           Balance
         </Heading>
         <Text>{address}</Text>
