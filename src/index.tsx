@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals'
 import { Root } from './layout'
 import { StateProvider } from './state/state'
 import theme from './theme'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
