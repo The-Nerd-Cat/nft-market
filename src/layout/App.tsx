@@ -8,14 +8,11 @@ const App = () => {
     state: { user },
   } = useStateContext()
 
-
   return (
     <Container>
       {!user ? (
         <>
-          <Flex sx={{ justifyContent: 'center' }}>
-            Hi! am gonna be a sexy index!
-          </Flex>
+          <Flex sx={{ justifyContent: 'center' }}>Hi! am gonna be a sexy index!</Flex>
         </>
       ) : (
         <Gallery />
