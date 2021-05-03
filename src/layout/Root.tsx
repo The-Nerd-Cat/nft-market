@@ -16,7 +16,7 @@ const Root = () => {
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Header.Body>
-        <Header.User/>
+        <Header.User />
       </Header.Body>
       <Web3ReactProvider getLibrary={getLibrary}>
         <Connect>

@@ -104,15 +104,14 @@ export default function Header({ ...args }) {
 }
 
 Header.User = function HeaderUser({ ...restProps }) {
-  
   const {
-    state: { user } ,
-    } = useStateContext()
-    
-    return (
+    state: { user },
+  } = useStateContext()
+
+  return (
     <>
-    {console.log(user)}
-      { !user ? (
+      {console.log(user)}
+      {!user ? (
         <>
           {/* <div>
             <a
@@ -133,12 +132,13 @@ Header.User = function HeaderUser({ ...restProps }) {
             <Link to="/SignIn">Sign In hi</Link>
           </Links>
         </>
-        ) : (
-          <Flex sx={{}}>hi
-            <UserMenu />
-          </Flex>
+      ) : (
+        <Flex sx={{}}>
+          hi
+          <UserMenu />
+        </Flex>
       )}
-    </> 
+    </>
   )
 }
 
