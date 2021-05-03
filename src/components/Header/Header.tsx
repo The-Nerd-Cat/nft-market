@@ -104,49 +104,41 @@ export default function Header({ ...args }) {
 }
 
 Header.User = function HeaderUser({ ...restProps }) {
+  
   const {
-    state: { user },
-  } = useStateContext()
+    state: { user } ,
+    } = useStateContext()
+    
+    return (
+    <>
+    {console.log(user)}
+      { !user ? (
+        <>
+          {/* <div>
+            <a
+              href="/"
+              className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+            >
+              Sign up
+            </a>
+            <p className="mt-6 text-center text-base font-medium text-gray-500">
+              Existing customer?{' '}
+              <a href="/" className="text-indigo-600 hover:text-indigo-500">
+                Sign in
+              </a>
+            </p>
+          </div> */}
 
-  const history = useHistory()
-
-  return (
-    <Flex
-      sx={{
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        bg: 'white',
-        borderBottom: '2px gray solid',
-        p: 3,
-      }}
-      as="nav"
-    >
-      <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
-        <Link to="/">Market</Link>
-      </Links>
-      <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
-        <Link to="/">Activity</Link>
-      </Links>
-      <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
-        <Link to="/">Features</Link>
-      </Links>
-      <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
-        <Link to="/">Community</Link>
-      </Links>
-      <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
-        <Link to="/">Search</Link>
-      </Links>
-
-      {!user ? (
-        <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
-          <Link to="/SignIn">Sign In</Link>
-        </Links>
-      ) : (
-        <Flex sx={{}}>
-          <UserMenu />
-        </Flex>
+          <Links sx={{ marginX: 2, textDecoration: 'none', color: 'gray' }}>
+            <Link to="/SignIn">Sign In hi</Link>
+          </Links>
+        </>
+        ) : (
+          <Flex sx={{}}>hi
+            <UserMenu />
+          </Flex>
       )}
-    </Flex>
+    </> 
   )
 }
 
@@ -452,20 +444,6 @@ Header.Body = function HeaderBody({ ...restProps }) {
                         {item.name}
                       </a>
                     ))}
-                  </div>
-                  <div>
-                    <a
-                      href="/"
-                      className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                    >
-                      Sign up
-                    </a>
-                    <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      Existing customer?{' '}
-                      <a href="/" className="text-indigo-600 hover:text-indigo-500">
-                        Sign in
-                      </a>
-                    </p>
                   </div>
                 </div>
               </div>
